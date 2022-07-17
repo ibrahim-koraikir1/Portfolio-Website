@@ -1,0 +1,41 @@
+.nav{
+    background:#3b25be;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 30px ;
+    color: white
+}
+.logo{
+    font-size: 33px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 22px;
+}
+
+.ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 44px;
+}
+.ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+}
+.btn{
+    padding: 11px 22px;
+    border-radius: 11px ;
+    outline: none;
+    background:#060413;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    font-size: 19px 
+  
+}
+
+.ul a.active{
+    opacity: 0.5;
+}
