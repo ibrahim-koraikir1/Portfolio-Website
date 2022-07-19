@@ -1,14 +1,16 @@
 import React , {useState} from 'react'
 import "./nav.css"
+
 export default function Nav() {
 
     const [active , setactive] = useState("")
+    const [btn , setbtn] = useState(false)
 
   return (
-    <div className='nav'>
+    <div className={btn ? "nav": "nav"}>
       <div className='logo'>logo</div>
 
-      <div className='ul'>
+      <div className={btn ? "ul add" : "ul"}>
           <a href='#' className={active === "home" ? "active" : ""} onClick={()=> setactive("home")} >home</a>
           <a href='#' className={active === "about" ? "active" : ""} onClick={()=> setactive("about") }>about</a>
           <a href='#' className={active === "conteact" ? "active" : ""} onClick={()=> setactive("conteact") }>conteact</a>
@@ -16,6 +18,8 @@ export default function Nav() {
       </div>
 
       <button className='btn'> get in thatch </button>
+      <button className='menu' onClick={()=> setbtn(!btn)}>  </button>
+      
     </div>
   )
 }
