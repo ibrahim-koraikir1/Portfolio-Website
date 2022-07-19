@@ -55,6 +55,7 @@
         right:20px ;
         font-sizes: 22px;
         height: 35px;
+        background: transparent;
     }
     .ul{
         display: flex;

@@ -1,5 +1,7 @@
 import React , {useState} from 'react'
 import "./nav.css"
+import { GiHamburgerMenu} from 'react-icons/gi';
+import {AiOutlineCloseCircle} from 'react-icons/ai'
 
 export default function Nav() {
 
@@ -18,8 +20,8 @@ export default function Nav() {
       </div>
 
       <button className='btn'> get in thatch </button>
-      <button className='menu' onClick={()=> setbtn(!btn)}>  </button>
-      
+   
+        {btn ?  <AiOutlineCloseCircle className='menu' onClick={()=> setbtn(!btn)} /> :  <GiHamburgerMenu className='menu' onClick={()=> setbtn(!btn)} /> }
     </div>
   )
 }
