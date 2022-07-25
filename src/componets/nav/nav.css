@@ -45,17 +45,20 @@
 @media (max-width: 768px) { 
      .nav{
         align-items: start;
+        width: 100%;
+        padding-top: 16px;
      }
     .menu{
         width:50px;
         display:  block ;
         background: blue;
         position: absolute;
-        top:15px ;
+        top:20px ;
         right:20px ;
         font-sizes: 22px;
         height: 35px;
         background: transparent;
+        z-index: 22;
     }
     .ul{
         display: flex;
@@ -64,15 +67,18 @@
         position: absolute;
         left: -3345px ;
         translate: all .5s ;
+        width: 100%;
     }
    
     .ul.add{
         transition: all 0.6s ease;
         justify-content: center;
         margin-top:50px ;
-        width: 100%;
+        width: 117%;
         left: 0;
+        right: 0;
         background-color: #3b25be;
+        z-index: 444;
     }
     
     .btn{display:none}
