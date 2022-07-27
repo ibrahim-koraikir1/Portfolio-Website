@@ -2,8 +2,11 @@
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr;
     position: relative;
+    max-width: 1040px;
     width: 100%;
-    max-width: 90%;
+   
+    
+    margin: 3rem auto;
     
     align-items: center;
 
